@@ -63,7 +63,7 @@ body {
 #GitHub {
     display: inline-block;
     border: none;
-    margin-top: 60%;
+    margin-top: 35px;
     height: 100%;
     border-radius: 10px;
     width: 100%;
@@ -92,13 +92,27 @@ body {
     opacity: 0.6;
 }
 
-.test {
-    background: green;
+.container {
+    padding-top: 10px;
+    border: none;
+}
 
+
+.test {
+    width: 800px;
+	margin: 0 auto;
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
 }
 
 #info{
-
+    margin-top: 80px;
+    width: 800px;
+    height: 40px;
     font-size: 30px;
     text-transform: uppercase;
     text-decoration: none;
@@ -107,3 +121,5 @@ body {
 
     transition: all 0.5s ease;
 }
+
+
