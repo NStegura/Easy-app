@@ -1,4 +1,5 @@
 import eel 
+import pyowm
 
 eel.init("web")
 
