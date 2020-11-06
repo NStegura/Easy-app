@@ -13,13 +13,28 @@
 </head>
 <body>
 
-    <input id="location" type="text" placeholder="Enter the name of the country and city..." required="" value="Russian Federation, Moscow">
+    <input id="location" type="text" placeholder="Enter the name of the country and city..." required="" value="New York, USA">
 
     <button id="show">T-shirt or coat?</button>
 
-    <div class="info">
-    
-    </div>
+    <div id="info"></div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        // js код для вызова Python функций
+
+        async function display_weather() {
+            let place = document.getElementById('location').value;
+
+            //вызвыаем функцию get_weather из Python кода
+            let res = await eel.get_weather(place)();
+            document.getElementById('info').innerHTML = res;
+        }
+
+        jQuery('#show').on('click', function() {
+            //при клике отоброжаем погоду
+            display_weather();
+        });
+    </script>
 </body>
 </html>
