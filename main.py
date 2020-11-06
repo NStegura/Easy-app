@@ -11,9 +11,9 @@ def get_weather(place):
     w = observation.weather
 
     temp = w.temperature('celsius')['temp']
-    print("В городе " + place + " сейчас " + str(temp) + " градусов!")
+    #print("В городе " + place + " сейчас " + str(temp) + " градусов!")
     return "В городе " + place + " сейчас " + str(temp) + " градусов!"
 
 eel.init("web")
 
-eel.start("main.html", size=(500, 500))
+eel.start("main.html", size=(900, 900))

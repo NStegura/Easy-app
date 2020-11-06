@@ -21,6 +21,9 @@ body {
     outline: none;
     width: 100%;
     font-size: 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 #location::placeholder {
@@ -45,8 +48,46 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 #show:hover {
     opacity: 0.6;
+}
+
+
+#GitHub {
+    display: inline-block;
+    border: none;
+    margin-top: 65%;
+    height: 100%;
+
+    background: #de6161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a50c0, #5cdfe9,#2a50c0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    outline: none;
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#GitHub:hover {
+    opacity: 0.6;
+}
+
+.test {
+    background: green;
+
 }
